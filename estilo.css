@@ -10,8 +10,7 @@ charset "UTF-8";
     background-size: cover;
     background-attachment: fixed;}
 
-    h1, h2, h3 { color: black; }
-     
+      
 
     header { background: #2e7d32; color: white; padding: 20px; text-align: center; }
 
@@ -28,10 +27,40 @@ charset "UTF-8";
       
   }
 
-   h4, h5, h6, p, a, li, label, input, textarea, button {
+   h1, h2, h3, h4, h5, h6, p, a, li, label, input, textarea, button {
     color: #fff !important;
     font-weight: bold !important;
 }
+
+section#servicos ul {
+    background: rgba(0, 0, 0, 0.6); /* Fundo semi-transparente */
+    padding: 20px;
+    text-align: center;
+}
+
+section#home {
+    background: rgba(0, 0, 0, 0.6); /* Fundo semi-transparente */
+    padding: 20px;
+    text-align: center;
+}
+
+section#sobre {
+    background: rgba(0, 0, 0, 0.6); /* Fundo semi-transparente */
+    padding: 20px;
+    text-align: center;
+}
+
+section#portfolio {
+    background: rgba(0, 0, 0, 0.6); /* Fundo semi-transparente */
+    padding: 20px;
+    text-align: center;
+}
+
+section#contato form {
+    background: rgba(0, 0, 0, 0.6); /* Fundo semi-transparente */
+    padding: 20px;
+    text-align: center;}
+    
 
     
     footer { background: #2e7d32; color: white; text-align: center; padding: 10px; }
