@@ -10,7 +10,7 @@ charset "UTF-8";
     background-size: cover;
     background-attachment: fixed;}
 
-    h1, h2, h3 { color: #2e7d32; }
+    h1, h2, h3 { color: black; }
      
 
     header { background: #2e7d32; color: white; padding: 20px; text-align: center; }
@@ -28,7 +28,7 @@ charset "UTF-8";
       
   }
 
-  h1, h2, h3, h4, h5, h6, p, a, li, label, input, textarea, button {
+   h4, h5, h6, p, a, li, label, input, textarea, button {
     color: #fff !important;
     font-weight: bold !important;
 }
