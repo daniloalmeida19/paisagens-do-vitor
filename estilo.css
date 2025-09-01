@@ -5,7 +5,13 @@ charset "UTF-8";
   box-sizing: border-box;
 }
 
-     body { font-family: Arial, sans-serif; margin: 0; padding: 0; background: #f4f4f4; }
+     body { font-family: Arial, sans-serif; margin: 0; padding: 0; background: #f4f4f4;
+    background-image:url(icons/imagem-inteira.jpg); 
+    background-size: cover;
+    background-attachment: fixed;}
+
+    h1, h2, h3 { color: #2e7d32; }
+     
 
     header { background: #2e7d32; color: white; padding: 20px; text-align: center; }
 
@@ -19,9 +25,13 @@ charset "UTF-8";
     margin: 10px; border: 2px solid #ccc; border-radius: 10px; 
     vertical-align: top; 
     display: inline-block; 
-
       
   }
+
+  h1, h2, h3, h4, h5, h6, p, a, li, label, input, textarea, button {
+    color: #fff !important;
+    font-weight: bold !important;
+}
 
     
     footer { background: #2e7d32; color: white; text-align: center; padding: 10px; }
