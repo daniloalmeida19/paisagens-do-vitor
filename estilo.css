@@ -142,6 +142,12 @@ section#contato form {
     color: black !important;
     background-color: #fff;
     font-weight: bold; }
+
+    /* Exemplo para adicionar no seu arquivo estilo.css */
+form div {
+  margin-bottom: 15px; /* Adiciona um espaço abaixo de cada campo do formulário */
+}
+
       
     
     footer { background: #2e7d32; color: white; text-align: center; padding: 10px; }
