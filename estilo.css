@@ -16,11 +16,33 @@ charset "UTF-8";
     background-attachment: fixed;
   }
 
-    h2 { color: #2e7d32; 
-    margin-bottom: 10px; 
+  h1{
+    background-color: rgba(0, 0, 0, 0.6); /* Fundo semi-transparente */
+    color: #fff !important;
+    font-weight: bold !important;
     text-align: center; 
 
+  }
+
+      h3, h4, h5, h6, p, a, li, label, input, textarea, button {
+    color: #fff !important;
+    font-weight: bold !important;
+}
+
+    h2 { color: white; 
+    margin-bottom: 10px; 
+    text-align: center; 
+    background-color: rgba(0, 0, 0, 0.6); /* Fundo semi-transparente */ 
+
+
   }      
+
+  p {
+    color: black;
+    margin: 10px 0;
+    text-align: center;
+    background-color: black;
+  }
 
     header { 
 background: #2e7d32;
@@ -33,9 +55,10 @@ background: #2e7d32;
       text-align: center; }
 
       nav#navbar a:hover {
-        text-decoration: underline;
+        text-decoration: none;
         background-color: rgba(255, 255, 0, 0.486);
         color: black;
+        border-radius: 5px;
       }
 
     nav a { 
@@ -49,11 +72,20 @@ background: #2e7d32;
 
     section { padding: 20px; }
 
-    section#portfolio img {
-    margin: 10px; border: 2px solid #ccc; border-radius: 10px; 
-    vertical-align: top; 
-    display: inline-block; 
-      
+  section#portfolio a {
+    color: white; 
+    text-decoration: none; 
+    font-weight: bold; 
+    font-size: 20px;
+    display: inline-block;
+    margin: 10px;
+  }
+
+  section#portfolio a:hover {
+    text-decoration: underline;
+    color: black;
+    background-color: rgba(0, 0, 0, 0.6); /* Fundo semi-transparente */
+    border-radius: 5px;
   }
 
   section#portfolio img {
@@ -63,15 +95,17 @@ background: #2e7d32;
     display: inline-block; 
   }
 
-   h1, h2, h3, h4, h5, h6, p, a, li, label, input, textarea, button {
-    color: #fff !important;
-    font-weight: bold !important;
-}
-
-section#servicos ul {
+ 
+section#servicos ul  {
     background: rgba(0, 0, 0, 0.6); /* Fundo semi-transparente */
     padding: 20px;
     text-align: center;
+    text-decoration: none;
+}
+
+section#servicos ul li {
+    list-style: none;
+    margin: 10px 0;
 }
 
 section#home {
@@ -95,9 +129,18 @@ section#portfolio {
 section#contato form {
     background: rgba(0, 0, 0, 0.6); /* Fundo semi-transparente */
     padding: 20px;
-    text-align: center;}
-    
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+    max-width: 600px;
+    margin: 0 auto;
+  }
 
+  input[type="submit"], button[type="submit"] {
+    color: black !important;
+    background-color: #fff;
+    font-weight: bold; }
+      
     
     footer { background: #2e7d32; color: white; text-align: center; padding: 10px; }
 
