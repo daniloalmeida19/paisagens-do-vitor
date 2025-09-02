@@ -181,11 +181,14 @@ section#contato form {
       margin: 10px 0;
       border: 1px solid #ccc;
       border-radius: 5px;
+      color: black;
+
     }
 
       textarea {
         height: 100px;
         resize: vertical;
+        color: black;
       }
 
     /* Exemplo para adicionar no seu arquivo estilo.css */
