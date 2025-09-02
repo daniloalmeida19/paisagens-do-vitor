@@ -150,6 +150,12 @@ section#contato form {
     transition: background-color 0.3s, color 0.3s;
    }
 
+   input[type="submit"]:hover, button[type="submit"]:hover {
+      background-color: #4caf50;
+      color: white !important;
+      cursor: pointer; 
+    }
+
    input[type="reset"] {
     color: black !important;
     background-color: #fff;
@@ -161,12 +167,26 @@ section#contato form {
     cursor: pointer;
     transition: background-color 0.3s, color 0.3s;
    }
+    input[type="reset"]:hover {
+        background-color: #f44336;
+        color: white !important;
+        cursor: pointer; 
+      }
+      
     
-    input[type="submit"]:hover, button[type="submit"]:hover {
-      background-color: #4caf50;
-      color: white !important;
-      cursor: pointer; 
+
+    input, textarea {
+      width: 30%;
+      padding: 10px;
+      margin: 10px 0;
+      border: 1px solid #ccc;
+      border-radius: 5px;
     }
+
+      textarea {
+        height: 100px;
+        resize: vertical;
+      }
 
     /* Exemplo para adicionar no seu arquivo estilo.css */
 form div {
