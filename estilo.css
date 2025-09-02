@@ -190,25 +190,8 @@ section#contato form {
       color: white !important;
       cursor: pointer; 
     }
-
-   input[type="reset"] {
-    color: black !important;
-    background-color: #fff;
-    font-weight: bold;
-    text-align: center;
-    border: none;
-    padding: 10px 20px;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background-color 0.3s, color 0.3s;
-   }
-    input[type="reset"]:hover {
-        background-color: #f44336;
-        color: white !important;
-        cursor: pointer; 
-      }    
-    
-
+  
+      
     input, textarea {
       width: 70%;
       padding: 10px;
@@ -219,28 +202,25 @@ section#contato form {
 
     }
 
-      textarea {
-        height: 100px;
-        resize: vertical;
-        color: black;
-      }
+    
 
-    /* Exemplo para adicionar no seu arquivo estilo.css */
-form div {
-  margin-bottom: 15px; /* Adiciona um espaço abaixo de cada campo do formulário */
-}
 
-div#form-group{
-  margin-bottom: 15px; /* Adiciona um espaço abaixo de cada campo do formulário */
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
-  text-align: center;
-  color: black;
-  font-weight: bold;
-  text-indent: bold 10px black;
+
+    
+
+
   
-}      
+
+  button {
+    background-color: #25D366;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+
+
     
     footer { background: #2e7d32; color: white; text-align: center; padding: 10px; }
 

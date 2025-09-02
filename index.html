@@ -53,45 +53,28 @@
 </section>
 
 <section id="contato">
-
   <h2>📞 Contato</h2>
+  <form>
+    <label for="nome">Nome:</label><br>
+    <input type="text" id="nome" name="nome" placeholder="Seu nome" required><br><br>
 
-  <p>Solicite Nosso Orçamento:</p>
-  
-<form action="processa-formulario.php" method="POST">
+    <label for="email">Email:</label><br>
+    <input type="email" id="email" name="email" placeholder="Seu email" required><br><br>
 
-  <div class="form-group">
-    <label for="nome">Nome:</label>
-    <input type="text" id="nome" name="nome" required placeholder="Seu nome"  >
-  </div> 
-  <br>
+    <label for="mensagem">Mensagem:</label><br>
+    <textarea id="mensagem" name="mensagem" placeholder="Escreva sua mensagem aqui..." rows="5" required></textarea><br><br>
 
-  <div class="form-group">
-    <label for="email">Email:</label>
-    <input type="email" id="email" name="email" required placeholder="Seu email">
-  </div>
-  <br>
-
-  <div class="form-group">
-    <label for="imensagem">Mensagem:</label>
-    <br>    
-    <input type="text" name="mensagem" id="imensagem" placeholder="Escreva sua mensagem aqui..." style= #mensagem>
-    <br>        
+    <button type="submit">Enviar</button>
     
-  </div>
-  
-  <input type="submit" value="Enviar" onclick="alert
-  ('Mensagem enviada com sucesso!')">
-  
-  <input type="reset" value="Limpar">  
-</form>
-
+    <button type="reset">Limpar</button>
+  </form>
+</section>
+    
 <footer>
   <p>&copy; 2025 S.L PAISAGISMO E JARDINAGEM</p>
 </footer>
 
-<script>
-  
+<script>  
 
 //confirm("Você gostaria de receber nossas atualizações?");//
 
