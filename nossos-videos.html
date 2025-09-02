@@ -30,17 +30,16 @@
             text-decoration: none;
             color: #0066cc;
             font-weight: bold;
-        }
+        }    
+
+                
         
-        
-        a:hover {
-            text-decoration: underline;
-        }
         section#portfolio video {
   margin: 10px;
   border: 2px solid #ccc;
   border-radius: 10px;
   display: inline-block;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
     video {
         max-width: 100%;
@@ -49,10 +48,21 @@
         box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
         margin: 10px;
         border: 2px solid #0066cc;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        
     }
 p {
     text-align: center;
     margin: 20px 0;
+}
+
+.videos-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 20px;
+
 }
 
     </style>
@@ -63,6 +73,7 @@ p {
 <h1>Videos</h1>
 <p>Veja alguns dos nossos vídeos:</p>
 
+<div class="videos-container">
 <video src="videos/VID-20250901-WA0001.mp4" width="200" controls></video>
 
 <video src="videos/VID-20250901-WA0002.mp4" width="200" controls></video>
@@ -105,13 +116,8 @@ p {
 
 <a href="index.html">Pagina Inicial</a>
 <!-- ...existing code... -->
+ </div>
     
 </body>
 </html>
 
-paisagens-do-vitor/
-  ├─ nossos-videos.html
-  └─ videos/
-      ├─ VID-20250901-WA0001.mp4
-      ├─ VID-20250901-WA0002.mp4
-      └─ ...

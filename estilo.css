@@ -79,6 +79,7 @@ background: #2e7d32;
     font-size: 20px;
     display: inline-block;
     margin: 10px;
+    transition: background-color 0.3s, color 0.3s;
   }
 
   section#portfolio a:hover {
@@ -112,6 +113,7 @@ section#home {
     background: rgba(0, 0, 0, 0.6); /* Fundo semi-transparente */
     padding: 20px;
     text-align: center;
+    border-radius: 5px;
 }
 
 section#sobre {
