@@ -24,7 +24,7 @@ charset "UTF-8";
 
   }
 
-      h3, h4, h5, h6, p, a, li, label, input, textarea, button {
+    h3, h4, h5, h6, p, a, li, label, input, textarea, button {
     color: #fff !important;
     font-weight: bold !important;
 }
