@@ -1,4 +1,21 @@
-charset "UTF-8";
+/* estilo.css */  
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background: black;
+  background-image:url(icons/imagem-inteira.jpg); 
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+*
   {
   margin: 0;
   padding: 0;
@@ -16,15 +33,19 @@ charset "UTF-8";
     background-attachment: fixed;
   }
 
+  header { 
+background: #2e7d32;
+ color: white; 
+ padding: 20px; text-align: center; }
+
   h1{
     background-color: rgba(0, 0, 0, 0.6); /* Fundo semi-transparente */
     color: #fff !important;
     font-weight: bold !important;
     text-align: center; 
-
   }
 
-    h3, h4, h5, h6, p, a, li, label, input, textarea, button {
+  h3, h4, h5, h6, p, a, li, label, input, textarea, button {
     color: #fff !important;
     font-weight: bold !important;
 }
@@ -43,12 +64,7 @@ charset "UTF-8";
     text-align: center;
     background-color: black;
   }
-
-    header { 
-background: #2e7d32;
- color: white; 
- padding: 20px; text-align: center; }
-
+    
     nav { 
       background: #388e3c; 
       padding: 10px; 
@@ -149,6 +165,24 @@ section#contato form {
     border-radius: 5px;
     cursor: pointer;
     transition: background-color 0.3s, color 0.3s;
+    }
+
+  input[type="submit"]:hover, button[type="submit"]:hover {
+      background-color: #4caf50;
+      color: white !important;
+      cursor: pointer; 
+    }   
+    button[type="submit"] {
+    color: black !important;
+    background-color: #fff; 
+
+    font-weight: bold;
+    text-align: center;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
    }
 
    input[type="submit"]:hover, button[type="submit"]:hover {
@@ -172,12 +206,11 @@ section#contato form {
         background-color: #f44336;
         color: white !important;
         cursor: pointer; 
-      }
-      
+      }    
     
 
     input, textarea {
-      width: 50%;
+      width: 70%;
       padding: 10px;
       margin: 10px 0;
       border: 1px solid #ccc;
@@ -207,8 +240,7 @@ div#form-group{
   font-weight: bold;
   text-indent: bold 10px black;
   
-}
-      
+}      
     
     footer { background: #2e7d32; color: white; text-align: center; padding: 10px; }
 
