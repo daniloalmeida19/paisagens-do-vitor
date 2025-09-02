@@ -55,25 +55,49 @@
   <p>Solicite Nosso Orçamento:</p>
   
 <form action="processa-formulario.php" method="POST">
-  <div id="form-group">
+
+  <div class="form-group">
     <label for="nome">Nome:</label>
-    <input type="text" id="nome" name="nome" required>
+    <input type="text" id="nome" name="nome" required placeholder="Seu nome" style= #mensagem {
+      color: black;
+      background-color: white;
+      font-size: 16px;
+    }>
   </div>
-  <div>
+
+  <div class="form-group">
     <label for="email">Email:</label>
-    <input type="email" id="email" name="email" required>
+    <input type="email" id="email" name="email" required placeholder="Seu email">
   </div>
-  <div>
+  <br>
+
+  <div class="form-group">
     <label for="mensagem">Mensagem:</label>
-    <textarea id="mensagem" name="mensagem" required></textarea>
+    <br>    
+    <textarea id="mensagem" name="mensagem" required placeholder="Sua mensagem" rows="5"></textarea>
+    
   </div>
-  <input type="submit" value="Enviar">
+  
+  <input type="submit" value="Enviar" onclick="alert
+  ('Mensagem enviada com sucesso!')">
+  
+  <input type="reset" value="Limpar">
+  
 </form>
+
 
 
 <footer>
   <p>&copy; 2025 S.L PAISAGISMO E JARDINAGEM</p>
 </footer>
+
+<script>
+  
+
+//confirm("Você gostaria de receber nossas atualizações?");//
+
+  // Você pode personalizar a mensagem conforme necessário
+</script>
 
 
 
