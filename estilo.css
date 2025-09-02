@@ -1,33 +1,50 @@
 charset "UTF-8";
   {
-    margin: 0;
+  margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-     body { font-family: Arial, sans-serif; margin: 0; padding: 0; background: #f4f4f4;
+     body { 
+    
+    font-family: Arial, sans-serif; 
+    margin: 0; 
+    padding: 0; 
+    background: black;
     background-image:url(icons/imagem-inteira.jpg); 
     background-size: cover;
-    background-attachment: fixed;}
+    background-attachment: fixed;
+  }
 
-    h2 { color: #2e7d32; margin-bottom: 10px; text-align: center; }
+    h2 { color: #2e7d32; 
+    margin-bottom: 10px; 
+    text-align: center; 
 
-      
+  }      
 
-    header { background: #2e7d32; color: white; padding: 20px; text-align: center; }
+    header { 
+background: #2e7d32;
+ color: white; 
+ padding: 20px; text-align: center; }
 
     nav { 
       background: #388e3c; 
       padding: 10px; 
       text-align: center; }
 
-    nav a { color: white; 
+      nav#navbar a:hover {
+        text-decoration: underline;
+        background-color: rgba(255, 255, 0, 0.486);
+        color: black;
+      }
+
+    nav a { 
+      color: black; 
       margin: 0 15px; 
       text-decoration: none; 
       font-weight: bold; 
       font-size: 18px;
-      transition: color 0.3s;
-      
+      transition: color 0.3s;      
     }
 
     section { padding: 20px; }
@@ -37,6 +54,13 @@ charset "UTF-8";
     vertical-align: top; 
     display: inline-block; 
       
+  }
+
+  section#portfolio img {
+    margin: 10px; border: 2px solid #ccc; 
+    border-radius: 10px; 
+    vertical-align: top; 
+    display: inline-block; 
   }
 
    h1, h2, h3, h4, h5, h6, p, a, li, label, input, textarea, button {
