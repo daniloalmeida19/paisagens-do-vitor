@@ -148,6 +148,14 @@ form div {
   margin-bottom: 15px; /* Adiciona um espaço abaixo de cada campo do formulário */
 }
 
+div#form-group{
+  margin-bottom: 15px; /* Adiciona um espaço abaixo de cada campo do formulário */
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  
+}
+
       
     
     footer { background: #2e7d32; color: white; text-align: center; padding: 10px; }
