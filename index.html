@@ -20,14 +20,12 @@
 
 <nav id="navbar">
   <a href="#servicos">Serviços</a>
-  <a href="#portfolio">Fotos</a>
-  <a href="#contato">Contato</a>
   <a href="https://www.instagram.com/vitor_paisagista/" target="_blank" rel="noopener noreferrer">Fotos</a>
 
   <a href="https://wa.me/5511910413849?text=Olá%2C%20quero%20fazer%20um%20orçamento!" 
    target="_blank" 
    style="background-color: #25D366; color: white; padding: 10px 15px; border-radius: 5px; text-decoration: none; font-weight: bold;">
-  💬 Fazer Orçamento
+  💬 WhatsApp
 </a> 
 
 
@@ -78,27 +76,6 @@
 </section>
 
 
-<section id="contato">
-  <h2>📝 Entre em Contato</h2>
-  <p>Tem alguma dúvida ou quer um orçamento? Preencha o formulário abaixo!</p>
-
-  <!-- 
-    INSTRUÇÃO:
-    1. Vá para https://formspree.io/ e crie uma conta gratuita.
-    2. Crie um novo formulário e copie a URL de ação.
-    3. Cole a sua URL no atributo 'action' abaixo, substituindo a URL de exemplo.
-  -->
-  <form id="meuFormulario" action="https://formspree.io/f/SUA_URL_AQUI" method="POST" onsubmit="return validarFormulario()">
-    <label for="nome">Nome:</label><br>
-    <input type="text" id="nome" name="nome" required><br>
-    <label for="email">Email:</label><br>
-    <input type="email" id="email" name="email" required><br>
-    <label for="mensagem">Mensagem:</label><br>
-    <textarea id="mensagem" name="mensagem" rows="4" required></textarea><br>
-    <button type="submit">Enviar Mensagem</button>
-  </form>
-</section>
-
 <script>
   function validarFormulario() {
     const nome = document.getElementById('nome').value;
@@ -110,7 +87,7 @@
       return false;
     }
 
-    alert('✅ Obrigado! Sua mensagem foi enviada com sucesso.');
+    alert('✅ Sua mensagem foi enviada com sucesso!');
     return true;
   }
 </script>
