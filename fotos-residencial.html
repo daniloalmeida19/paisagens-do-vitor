@@ -8,66 +8,72 @@
     <style>
        body {
             font-family: Arial, sans-serif;
-            background-color: #f0f8ff;
+            background-color: #f4f4f4;
             color: #333;
             margin: 0;
             padding: 20px;
+            text-align: center;
         }
 
        h1 {
             text-align: center;
             margin-top: 20px;
+            margin-bottom: 40px;
             color: #2E8B57;
-            font-family: Arial, sans-serif;
         }
 
-        img {
-        display: inline-block;
-        margin: 20px 10px;
-        border: 2px solid green;
-        border-radius: 10px;
-        vertical-align: top;
-    }
-        a {
+        .gallery-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        .gallery-container img {
+            width: 100%;
+            max-width: 300px;
+            height: auto;
+            border: 3px solid #2E8B57;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            transition: transform 0.3s ease;
+        }
+
+        .gallery-container img:hover {
+            transform: scale(1.05);
+        }
+
+        a.back-link {
             display: block;
             text-align: center;
-            margin: 20px;
+            margin-top: 40px;
             text-decoration: none;
             color: #0066cc;
             font-weight: bold;
+            font-size: 1.1em;
         }
         
-        a:hover {
+        a.back-link:hover {
             text-decoration: underline;
         }
-
-
     </style>
 </head>
 <body>
 
     <h1>Fotos Residenciais</h1>
 
-    <img src="Fotos-Residenciais/Jardim-1.jpg" alt="Projeto Residencial 1" width="200" height="300">
+    <div class="gallery-container">
+        <img src="Fotos-Residenciais/Jardim-1.jpg" alt="Projeto Residencial 1">
+        <img src="Fotos-Residenciais/Jardim-2.jpg" alt="Projeto Residencial 2">    
+        <img src="Fotos-Residenciais/Jardim-4.jpg" alt="Projeto Residencial 4">
+        <img src="Fotos-Residenciais/jardim-5.jpg" alt="Projeto Residencial 5">
+        <img src="Fotos-Residenciais/jardim-6.jpg" alt="Projeto Residencial 6">
+        <img src="Fotos-Residenciais/jardim-7.jpg" alt="Projeto Residencial 7">   
+        <img src="Fotos-Residenciais/Jardim-9.jpg" alt="Projeto Residencial 9">
+        <img src="Fotos-Residenciais/Jardim-10.jpg" alt="Projeto Residencial 10">
+    </div>
 
-    <img src="Fotos-Residenciais/Jardim-2.jpg" alt="Projeto Residencial 2" width="200" height="300">    
-
-    <img src="Fotos-Residenciais/Jardim-4.jpg" alt="Projeto Residencial 4" width="200" height="300">
-
-    <img src="Fotos-Residenciais/jardim-5.jpg" alt="Projeto Residencial 5" width="200" height="300">
-
-    <img src="Fotos-Residenciais/jardim-6.jpg" alt="Projeto Residencial 6" width="200" height="300">
-
-    <img src="Fotos-Residenciais/jardim-7.jpg" alt="Projeto Residencial 7" width="200" height="300">   
-
-    <img src="Fotos-Residenciais/Jardim-9.jpg" alt="Projeto Residencial 9" width="200" height="300">
-
-    <img src="Fotos-Residenciais/Jardim-10.jpg" alt="Projeto Residencial 10" width="200" height="300">
-
-
-    <br>
-
-    <a href= "index.html">Pagina Inicial</a>
+    <a href="index.html" class="back-link">Página Inicial</a>
     
 </body>
 </html>

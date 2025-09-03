@@ -1,4 +1,6 @@
-
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Fotos Comerciais</title>
@@ -6,69 +8,72 @@
     <style>
        body {
             font-family: Arial, sans-serif;
-            background-color: #f0f8ff;
+            background-color: #f4f4f4;
             color: #333;
             margin: 0;
             padding: 20px;
+            text-align: center; /* Centraliza o conteúdo do body */
         }
        h1 {
             text-align: center;
             margin-top: 20px;
+            margin-bottom: 40px;
             color: #2E8B57;
-            font-family: Arial, sans-serif;
         }
 
-         img {
-        display: inline-block;
-        margin: 20px 10px;
-        border: 2px solid green;
-        border-radius: 10px;
-        vertical-align: top;
-    }
-        a {
+        .gallery-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px; /* Espaçamento entre as imagens */
+        }
+
+        .gallery-container img {
+            width: 100%;
+            max-width: 300px; /* Tamanho máximo da imagem */
+            height: auto; /* Mantém a proporção */
+            border: 3px solid #2E8B57;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            transition: transform 0.3s ease;
+        }
+
+        .gallery-container img:hover {
+            transform: scale(1.05); /* Efeito de zoom ao passar o mouse */
+        }
+
+        a.back-link {
             display: block;
             text-align: center;
-            margin: 20px;
+            margin-top: 40px;
             text-decoration: none;
             color: #0066cc;
             font-weight: bold;
+            font-size: 1.1em;
         }
-        a:hover {
+        a.back-link:hover {
             text-decoration: underline;
         }
-
-
     </style>
 </head>
 <body>
 
     <h1>Fotos Comerciais</h1>
 
+    <div class="gallery-container">
+        <img src="Fotos-Comercial/IMG-20250901-WA0033.jpg" alt="Foto comercial 1">
+        <img src="Fotos-Comercial/IMG-20250901-WA0034.jpg" alt="Foto comercial 2">
+        <img src="Fotos-Comercial/IMG-20250901-WA0035.jpg" alt="Foto comercial 3">
+        <img src="Fotos-Comercial/IMG-20250901-WA0036.jpg" alt="Foto comercial 4">
+        <img src="Fotos-Comercial/IMG-20250901-WA0037.jpg" alt="Foto comercial 5">
+        <img src="Fotos-Comercial/IMG-20250901-WA0038.jpg" alt="Foto comercial 6">
+        <img src="Fotos-Comercial/IMG-20250901-WA0039.jpg" alt="Foto comercial 7">    
+        <img src="Fotos-Comercial/IMG-20250901-WA0040.jpg" alt="Foto comercial 8">
+        <img src="Fotos-Comercial/IMG-20250901-WA0041.jpg" alt="Foto comercial 9">
+        <img src="Fotos-Comercial/IMG-20250901-WA0043.jpg" alt="Foto comercial 10">
+    </div>
+
+    <a href="index.html" class="back-link">Página Inicial</a>
     
-    <img src="Fotos-Comercial/IMG-20250901-WA0033.jpg" alt="Projeto Residencial 1" width="200" height="300">
-
-    <img src="Fotos-Comercial/IMG-20250901-WA0034.jpg" alt="Projeto Residencial 2" width="200"  height="300">
-
-    <img src="Fotos-Comercial/IMG-20250901-WA0035.jpg" alt="Projeto Residencial 3" width="200" height="300">
-
-    <img src="Fotos-Comercial/IMG-20250901-WA0036.jpg" alt="Projeto Residencial 4" width="200" height="300">
-
-    <img src="Fotos-Comercial/IMG-20250901-WA0037.jpg" alt="Projeto Residencial 5" width="200" height="300">
-
-    <img src="Fotos-Comercial/IMG-20250901-WA0038.jpg" alt="Projeto Residencial 6" width="200" height="300">
-
-    <img src="Fotos-Comercial/IMG-20250901-WA0039.jpg" alt="Projeto Residencial 7" width="200" height="300">    
-
-    <img src="Fotos-Comercial/IMG-20250901-WA0040.jpg" alt="Projeto Residencial 1" width="200" height="300">
-
-    <img src="Fotos-Comercial/IMG-20250901-WA0041.jpg" alt="Projeto Residencial 1" width="200" height="300">
-
-    <img src="Fotos-Comercial/IMG-20250901-WA0043.jpg" alt="Projeto Residencial 1" width="200" height="300">
-
-    <br>
-
-    <a href= "index.html">Pagina Inicial</a>
-    
-      
 </body>
 </html>

@@ -10,13 +10,8 @@
       return false;
     }
 
-    // Mensagem de confirmação (opcional, já que FormSubmit redireciona)
-    alert('✅ Obrigado, sua mensagem foi enviada com sucesso!');
+    // Se a validação passar, mostra a mensagem de sucesso e permite o envio.
+    alert('✅ Obrigado! Sua mensagem foi enviada com sucesso.');
     return true;
-  }
-
-
     
-   
-  
-
+  }
