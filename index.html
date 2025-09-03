@@ -28,7 +28,6 @@
 
 </nav>
 
-
 <section id="servicos">
   <h2>🌿 Nossos Serviços</h2>
   <ul>
@@ -41,7 +40,7 @@
 </section>
 
 <section id="portfolio">
-  <h2>📸 Nossos Fotos & Videos videos</h2>
+  <h2>📸 Nossos Fotos & Videos</h2>
 
   <p>Veja alguns dos nossos projetos:</p>
 
@@ -52,34 +51,64 @@
   <a href="nossos-videos.html" target="_blank" rel="noopener noreferrer">🌿Nossos Videos</a>
 </section>
 
-<section id="contato">
-  <h2>📞 Contato</h2>
-  <form>
-    <label for="nome">Nome:</label><br>
-    <input type="text" id="nome" name="nome" placeholder="Seu nome" required><br><br>
+ <section id="contato">
+  <h2>📞 Fale Conosco</h2>
 
-    <label for="email">Email:</label><br>
-    <input type="email" id="email" name="email" placeholder="Seu email" required><br><br>
+<!-- Esta parte do seu e-mail tenho que colocar antes de mandar-->
+  <form action="https://formsubmit.co/daniloalmeida1119@gmail.com" method="POST">
+    <input type="hidden" name="_next" value="https://seusite.com/obrigado.html">
+    <input type="hidden" name="_captcha" value="false">
+    <input type="text" name="_honey" style="display:none">
 
-    <label for="mensagem">Mensagem:</label><br>
-    <textarea id="mensagem" name="mensagem" placeholder="Escreva sua mensagem aqui..." rows="5" required></textarea><br><br>
+    <label for="nome">Nome:</label>
+    <input type="text" id="nome" name="nome" required>
+    <br>
+
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email" required>
+    <br>
+
+    <label for="mensagem">Mensagem</label>
+    <br>
+    <textarea id="mensagem" name="mensagem" required rows="4" cols="50"></textarea>
+    <br>
 
     <button type="submit">Enviar</button>
-    
     <button type="reset">Limpar</button>
   </form>
+
+  <div class="info-contato">
+    <p>📍 <strong>Endereço:</strong> Rua Olivanca, 119 - Jardim Carvalho, Guarulhos - SP, Cep: 07244-310</p>
+    <p>🕒 <strong>Atendimento:</strong> Segunda a Sexta, das 8h às 17h</p>  
+    
+  </div>
+
 </section>
+
+
+<script>
+  function validarFormulario() {
+    const nome = document.getElementById('nome').value;
+    const email = document.getElementById('email').value;
+    const mensagem = document.getElementById('mensagem').value;
+
+    if (!nome || !email || !mensagem) {
+      alert('Por favor, preencha todos os campos.');
+      return false;
+    }
+
+    alert('✅ Sua mensagem foi enviada com sucesso!');
+    return true;
+  }
+</script>
+
     
 <footer>
   <p>&copy; 2025 S.L PAISAGISMO E JARDINAGEM</p>
 </footer>
 
-<script>  
-
-//confirm("Você gostaria de receber nossas atualizações?");//
-
-  // Você pode personalizar a mensagem conforme necessário
-</script>
 
 </body>
 </html>
+
+<!--tenho que arrumar o e-mail do meu e o site daqui-->

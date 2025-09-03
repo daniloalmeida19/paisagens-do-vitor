@@ -1,28 +1,22 @@
-document.getElementById('contato-form').addEventListener('submit', function(e) {
-  e.preventDefault();
 
-  const formData = new FormData(this);
 
-  fetch('https://seuservidor.com/api/mensagem', {
-    method: 'POST',
-    body: formData
-  })
-  .then(response => {
-    if (response.ok) {
-      alert('Mensagem enviada com sucesso!');
-    } else {
-      alert('Erro ao enviar mensagem.');
+  function validarFormulario() {
+    const nome = document.getElementById('nome').value.trim();
+    const email = document.getElementById('email').value.trim();
+    const mensagem = document.getElementById('mensagem').value.trim();
+
+    if (!nome || !email || !mensagem) {
+      alert('⚠️ Por favor, preencha todos os campos antes de enviar.');
+      return false;
     }
 
-       #mensagem {
-      color: black;
-      background-color: white;
-      font-size: 16px;
-    }
-  })
-  .catch(error => {
-    console.error('Erro ao enviar mensagem:', error);
-  });
-});
+    // Mensagem de confirmação (opcional, já que FormSubmit redireciona)
+    alert('✅ Obrigado, sua mensagem foi enviada com sucesso!');
+    return true;
+  }
 
+
+    
+   
+  
 
